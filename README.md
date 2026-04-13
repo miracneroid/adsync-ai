@@ -73,6 +73,7 @@ This service needs to be hosted where Python is supported.
 - Set `GROQ_API_KEY` and `ALLOWED_ORIGINS` in the environment variables.
 
 ### **Edge Function (Supabase)**
+- Link your project: `supabase link --project-id your_project_id`.
 - Deploy using the Supabase CLI: `supabase functions deploy personalize`.
 - Ensure all secrets are set using `supabase secrets set`.
 
