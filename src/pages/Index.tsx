@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { InputForm } from "@/components/InputForm";
 import { ResultsView, Change } from "@/components/ResultsView";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Sparkles } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
@@ -19,14 +20,17 @@ const Index = () => {
       <div className="fixed inset-0 glow-bg pointer-events-none" />
 
       <header className="relative z-10 border-b border-border/50 backdrop-blur-sm">
-        <div className="container max-w-5xl mx-auto flex items-center gap-3 py-4 px-6">
-          <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center">
-            <Sparkles className="h-4 w-4 text-primary" />
+        <div className="container max-w-5xl mx-auto flex items-center justify-between gap-3 py-4 px-6">
+          <div className="flex items-center gap-3">
+            <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center">
+              <Sparkles className="h-4 w-4 text-primary" />
+            </div>
+            <h1 className="text-lg font-semibold font-[family-name:var(--font-heading)]">
+              <span className="gradient-text">Adsync AI</span>
+              <span className="text-muted-foreground ml-2 text-sm font-normal">AI Page Personalizer</span>
+            </h1>
           </div>
-          <h1 className="text-lg font-semibold font-[family-name:var(--font-heading)]">
-            <span className="gradient-text">Adsync AI</span>
-            <span className="text-muted-foreground ml-2 text-sm font-normal">AI Page Personalizer</span>
-          </h1>
+          <ThemeToggle />
         </div>
       </header>
 

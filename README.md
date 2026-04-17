@@ -67,7 +67,7 @@ deno run --allow-net --allow-env --env-file=supabase/functions/personalize/.env 
 - Set `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, and `VITE_PROCESSOR_URL` in the Netlify UI.
 - Netlify will automatically build and deploy from the `dist` folder.
 
-### **AdSync AI Processor (Render / Railway / Fly.io)**
+### **AdSync AI Processor (Render)**
 This service needs to be hosted where Python is supported.
 - **Render**: Create a "Web Service", connect your repo, set the build command to `pip install -r adsync-ai-processor/requirements.txt`, and start command to `uvicorn adsync-ai-processor.main:app --host 0.0.0.0 --port $PORT`.
 - Set `GROQ_API_KEY` and `ALLOWED_ORIGINS` in the environment variables.
