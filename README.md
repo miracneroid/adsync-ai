@@ -1,4 +1,7 @@
 # AdSync AI — Smart Landing Page Personalization Engine
+ 🚀 AdSync AI — Smart Landing Page Personalization Engine
+
+🌐 Live Demo: https://adsyncai.netlify.app/
 
 AdSync AI is a high-performance personalization engine designed to bridge the gap between ad creatives and landing page experiences. This project implements an agentic workflow that dynamically rewrites landing page content to match the specific intent of an ad, ensuring a cohesive user journey and higher conversion rates.
 
@@ -141,5 +144,3 @@ To deploy AdSync AI at scale, I've optimized it for **Netlify** (Frontend) and *
 - A `mock` provider is available for testing UI flows without consuming AI credits.
 
 ---
-
-**Built as a submission for the Troopod AI assignment.**
